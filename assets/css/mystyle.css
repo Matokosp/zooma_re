@@ -4,14 +4,54 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'OrkneyLight';
+  src:  url('../fonts/Orkney-Light.woff2') format('woff2'),
+        url('../fonts/Orkney-Light.woff') format('woff'),
+        url('../fonts/Orkney-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OrkneyLightItalic';
+  src:  url('../fonts/Orkney-Light-Italic.woff2') format('woff2'),
+        url('../fonts/Orkney-Light-Italic.woff') format('woff'),
+        url('../fonts/Orkney-Light-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OrkneyMedium';
+  src:  url('../fonts/Orkney-Medium.woff2') format('woff2'),
+        url('../fonts/Orkney-Medium.woff') format('woff'),
+        url('../fonts/Orkney-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OrkneyRegular';
+  src:  url('../fonts/Orkney-Regular.woff2') format('woff2'),
+        url('../fonts/Orkney-Regular.woff') format('woff'),
+        url('../fonts/Orkney-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OrkneyBold';
+  src:  url('../fonts/Orkney-Bold.woff2') format('woff2'),
+        url('../fonts/Orkney-Bold.woff') format('woff'),
+        url('../fonts/Orkney-Bold.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Hind', sans-serif;
+  font-family: 'OrkneyRegular', sans-serif;
+}
+
+a {
+  text-align: none;
+  color: inherit;
 }
 
 h1, h2 {
-  font-family: 'Martel', serif;
+  font-family: 'Unna', serif;
 }
 
 .fullpage {
