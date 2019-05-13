@@ -14,6 +14,25 @@
     left: 25%;
   }
 
+.proyects_item {
+  width: 50%;
+  height: 50vw;
+  float: left;
+}
+
+.clients_text {
+  padding: 0 20vw;
+}
+
+.clients_flex_container {
+  padding: 0 10vw;
+}
+
+.clients_flex_item {
+  width: 33%;
+  margin: auto;
+}
+
 }
 
 @media (min-width: 1000px) and (orientation: portrait) {
@@ -41,12 +60,18 @@
     left: 25%;
   }
 
+.clients_flex_item {
+    width: 25%;
+    margin: auto;
+  }
+
 }
 
 @media (min-width: 1000px) and (orientation: landscape) {
 
 .front {
   padding-top: 30vh;
+  height: 90vh;
 }
 
 .front_logo {
@@ -72,6 +97,37 @@
   left: auto;
 }
 
+.next_section_foot img {
+  width: 15px;
+}
+
+.proyects_item_plus {
+  display: none;
+}
+
+.proyects_item {
+  width: 33.3%;
+  height: 33.3vw;
+  float: left;
+}
+
+.clients_text {
+  padding: 0;
+  width: 40%;
+  margin: 0 auto 10vh auto;
+}
+
+.clients_flex_container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.clients_flex_item {
+    width: 25%;
+    margin: auto;
+}
+
 }
 
 @media (min-width: 1440px) {
@@ -79,6 +135,24 @@
 .front_img {
   width: 30vw;
   right: 10vw;
+}
+
+.proyects_item {
+  width: 25%;
+  height: 25vw;
+  float: left;
+}
+
+.clients_text {
+  width: 30%;
+}
+
+.clients_text p {
+  font-size: 1rem;
+}
+
+.clients_flex_container {
+  width: 50%;
 }
 
 }

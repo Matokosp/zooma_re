@@ -43,6 +43,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'OrkneyRegular', sans-serif;
+  font-weight: 300;
 }
 
 a {
@@ -72,6 +73,7 @@ h1, h2, h3 {
   background-color: rgb(29,29,27);
   padding-top: 8vh;
   position: relative;
+  height: 90vh;
 }
 
 .front_logo {
@@ -88,7 +90,7 @@ h1, h2, h3 {
 .front_text h5 {
   font-family: 'OrkneyLight', sans-serif;
   color: #fff;
-  margin-bottom: 5vh;
+  margin-bottom: 15px;
   font-weight: 200;
 }
 
@@ -97,23 +99,156 @@ h1, h2, h3 {
   margin: 0% auto;
 }
 
-.quote_one {
+.quotes {
   color: rgb(136,204,205);
-  display: none;
   font-family: 'Unna';
   font-style: italic;
+}
+
+.quote_one {
+  display: none;
 }
 
 .quote_two {
-  color: rgb(136,204,205);
   display: none;
-  font-family: 'Unna';
-  font-style: italic;
 }
 
 .front_img {
-  width: 85%;
+  width: 70%;
   position: absolute;
-  left: 7.5%;
-  bottom: 2vh;
+  left: 15%;
+  bottom: 5vh;
+}
+
+.next_section_foot {
+  position: absolute;
+  width: 20%;
+  bottom: 10px;
+  left: 40%;
+  text-align: center;
+}
+
+.next_section_foot h4 {
+  color: #fff;
+  font-family: 'OrkneyLight', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+
+.next_section_foot img {
+  width: 20px;
+}
+
+.proyects:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.proyects_item {
+  position: relative;
+  height: 100vw;
+}
+
+.proyects_item_img {
+  width: 100%;
+}
+
+.proyects_item_plus {
+  position: absolute;
+  width: 10%;
+  left: 45%;
+  top: 45%;
+}
+
+.proyects_item_text {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  top: 30%;
+  text-align: center;
+  color: #fff;
+  z-index: 5;
+}
+
+.proyects_item_text p {
+  font-family: "OrkneyRegular", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.proyects_item_text span {
+  font-family: "OrkneyLightItalic", sans-serif;
+  font-size: 0.9rem;
+}
+
+.proyects_item_text-separation {
+  background-color: #fff;
+  height: 2px;
+  width: 30%;
+  margin: 15px auto;
+}
+
+.proyects_item_link {
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  bottom: 10%;;
+  color: #fff;
+  text-align: center;
+  z-index: 5;
+  border: solid #fff 1px;
+  padding: 5px 20px;
+  font-size: 0.9rem;
+}
+
+.proyects_item_text_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(29,29,27,0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.clients {
+  background-color: rgb(29,29,27);
+  text-align: center;
+  padding: 10vh 0;
+}
+
+.clients_text {
+  color: #fff;
+  padding: 0 10vw;
+  margin-bottom: 10vh;
+}
+
+.clients_text h3 {
+  font-family: "OrkneyMedium", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.clients_text-separation {
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.clients_text p {
+  font-size: 0.9rem;
+}
+
+.clients_flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 5vw;
+}
+
+.clients_flex_item {
+  width: 50%;
+  margin: auto;
 }
