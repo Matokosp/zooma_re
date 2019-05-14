@@ -162,6 +162,16 @@ h1, h2, h3 {
   top: 45%;
 }
 
+.proyects_item_info {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.proyects_item_info:hover {
+  opacity: 1;
+}
+
+
 .proyects_item_text {
   position: absolute;
   width: 70%;
@@ -201,6 +211,7 @@ h1, h2, h3 {
   border: solid #fff 1px;
   padding: 5px 20px;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .proyects_item_text_overlay {
@@ -251,4 +262,47 @@ h1, h2, h3 {
 .clients_flex_item {
   width: 50%;
   margin: auto;
+}
+
+.footer {
+  background-color: rgba(244,244,244,1);
+  text-align: center;
+  padding: 10vh 0 15vh 0;
+  position: relative;
+}
+
+.footer_list {
+  display: inline-block;
+  text-align: left;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer_list_item {
+  margin: 20px 0;
+}
+
+.footer_list_item img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.footer_list_item span {
+  font-size: 0.65rem;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.footer_logo {
+  position: absolute;
+  bottom: 0;
+  background-color: #000;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.footer_logo img {
+  padding-top: 2px;
+  width: 100px;
 }

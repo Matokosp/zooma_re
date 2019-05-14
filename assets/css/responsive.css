@@ -79,7 +79,7 @@
 }
 
 .front_text {
-  padding: 0 20vw;
+  padding: 0 20%;
 }
 
 .front_text h5 {
@@ -107,7 +107,7 @@
 
 .proyects_item {
   width: 33.3%;
-  height: 33.3vw;
+  height: 33.1vw;
   float: left;
 }
 
@@ -128,6 +128,19 @@
     margin: auto;
 }
 
+.footer {
+  padding: 20vh 0 25vh 0;
+}
+
+.footer_list_item img {
+  width: 25px;
+}
+
+.footer_list_item span {
+  font-size: 0.75rem;
+  margin-left: 15px;
+}
+
 }
 
 @media (min-width: 1440px) {
@@ -139,7 +152,7 @@
 
 .proyects_item {
   width: 25%;
-  height: 25vw;
+  height: 24.9vw;
   float: left;
 }
 
@@ -153,6 +166,14 @@
 
 .clients_flex_container {
   width: 50%;
+}
+
+.footer_list_item img {
+  width: 25px;
+}
+
+.footer_list_item span {
+  font-size: 0.9rem;
 }
 
 }
