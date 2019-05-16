@@ -83,4 +83,36 @@
 
   // PROYECTS HOVER
 
-  
+var x = window.matchMedia("(max-width: 999px)");
+var y = window.matchMedia("(min-width: 1000px)");
+
+  function proyectInfoResponsive(x) {
+    if (x.matches) { // If media query matches
+
+      var proyectInfo = $(".proyects_item_info");
+      var proyectSection = $(".proyects_item");
+
+      $(proyectSection).on('click', function(e){
+        $(this).children(proyectInfo).toggleClass('proyects_item_info-reveal');
+        // e.stopPropagation();
+      })
+    }
+  }
+
+  function proyectInfo(y) {
+    if (y.matches) { // If media query matches
+
+      var proyectInfo = $(".proyects_item_info");
+      var proyectSection = $(".proyects_item");
+
+      $(proyectSection).on('hover', function(e){
+        $(this).children(proyectInfo).toggleClass('proyects_item_info-reveal');
+        e.stopPropagation();
+      })
+    }
+  }
+
+  proyectInfoResponsive(x) // Call listener function at run time
+	x.addListener(proyectInfoResponsive) // Attach listener function on state changes
+  proyectInfo(y) // Call listener function at run time
+  x.addListener(proyectInfo) // Attach listener function on state changes

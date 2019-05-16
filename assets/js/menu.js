@@ -5,13 +5,14 @@
 	function desplazar (){
 		$('.menu__responsive--hidden').toggleClass('show');
 		$('#hamburger').toggleClass('hamburguer-slide');
+		$('.hamburger__section-icon').toggleClass('hamburger__section-icon-black');
 	}
 
 	$('#hamburger').on('click', function(e){
 		desplazar();
 		e.stopPropagation();
 		menuShow = $('.menu__responsive').children(".menu__responsive--hidden").hasClass('show');
-		console.log(menuShow)
+		console.log(menuShow);
 	})
 
 	window.addEventListener('click', function(e){
@@ -21,5 +22,5 @@
 			$('.menu__responsive--hidden').removeClass('show');
 			$('#hamburger').removeClass('hamburguer-slide');
 		}
-		console.log(e.target)
+		// console.log(e.target)
 	})

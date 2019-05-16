@@ -1,3 +1,5 @@
+/* TABLETS MID RES PORTRAIT */
+
 @media (min-width: 768px) and (orientation: portrait) {
 
 .front_logo {
@@ -33,7 +35,27 @@
   margin: auto;
 }
 
+/* PROYECT PAGE */
+
+.proyect_images {
+  padding: 0 10vw 5vh 10vw;
 }
+
+.img-square {
+  width: 50%;
+}
+
+.prev_proyect {
+  left: 10vw;
+}
+
+.next_proyect {
+  right: 10vw;
+}
+
+}
+
+/* TABLETS HIGH RES PORTRAIT */
 
 @media (min-width: 1000px) and (orientation: portrait) {
 
@@ -64,6 +86,50 @@
     width: 25%;
     margin: auto;
   }
+
+  /* PROYECT PAGE */
+
+  .proyect_left {
+    border-bottom: none;
+    border-right: solid 2px rgb(136, 204, 205);
+    display: inline-block;
+    width: 70%;
+    padding: 0 3% 0 0;
+    vertical-align: middle;
+  }
+
+  .proyect_right {
+    display: inline-block;
+    width: 25%;
+    padding-left: 2%;
+    vertical-align: middle;
+  }
+
+}
+
+/* PHONE LANDSCAOE ORIENTATION */
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+.front_logo {
+  width: 15vw;
+}
+
+.front_img {
+    width: 30%;
+    right: 5%;
+    left: auto;
+}
+
+.proyects_item {
+  width: 25%;
+  height: 25vw;
+  float: left;
+}
+
+.clients_flex_container {
+  padding: 0 20vw;
+}
 
 }
 
@@ -109,6 +175,7 @@
   width: 33.3%;
   height: 33.1vw;
   float: left;
+  cursor: pointer;
 }
 
 .clients_text {
@@ -139,6 +206,47 @@
 .footer_list_item span {
   font-size: 0.75rem;
   margin-left: 15px;
+}
+
+/* PROYECT PAGE */
+
+.proyect_hero {
+  height: 85vh;
+}
+
+.proyect_left {
+  border-bottom: none;
+  border-right: solid 2px rgb(136, 204, 205);
+  display: inline-block;
+  width: 70%;
+  padding: 0 3% 0 0;
+  vertical-align: middle;
+}
+
+.proyect_right {
+  display: inline-block;
+  width: 25%;
+  padding-left: 2%;
+  vertical-align: middle;
+}
+
+.proyect_images {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 5vh 5vw;
+}
+
+.proyect_img {
+  padding: 5px;
+}
+
+.img-square {
+  width: 50%;
+}
+
+.proyect_nav {
+  /* max-width: 1200px; */
+  margin: 0 auto;
 }
 
 }

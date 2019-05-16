@@ -44,6 +44,7 @@ body {
   padding: 0;
   font-family: 'OrkneyRegular', sans-serif;
   font-weight: 300;
+  height: 100%;
 }
 
 a {
@@ -133,7 +134,7 @@ h1, h2, h3 {
   font-family: 'OrkneyLight', sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .next_section_foot img {
@@ -163,11 +164,13 @@ h1, h2, h3 {
 }
 
 .proyects_item_info {
+  visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
 
-.proyects_item_info:hover {
+.proyects_item_info-reveal {
+  visibility: visible;
   opacity: 1;
 }
 
@@ -305,4 +308,168 @@ h1, h2, h3 {
 .footer_logo img {
   padding-top: 2px;
   width: 100px;
+}
+
+
+/* PROYECTS PAGE */
+
+.proyect_hero {
+  /* The image used */
+ background-image: url('../images/akbar-hero.jpg');
+
+ /* Full height */
+ height: 75vh;
+
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+ position: relative;
+}
+.proyect_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.proyect {
+  padding: 5vh 10vw;
+
+  margin: 0 auto;
+}
+
+.proyect_left {
+  border-bottom: solid 2px rgb(136, 204, 205);
+  padding-bottom: 4vh;
+}
+
+.proyect_title {
+  position: relative;
+}
+
+.proyect_title h4 {
+  font-family: 'OrkneyMedium', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.proyect_title h2 {
+  font-size: 6.5rem;
+  margin: 0;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  z-index: -5;
+  color: #EFEFEF;
+}
+
+.proyect_title h3 {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.proyect_title_separation {
+  width: 100px;
+  height: 2px;
+  background-color: rgb(136, 204, 205);
+}
+
+.proyect_text {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.proyect_right-item {
+  padding: 25px 0;
+}
+
+.proyect_right-title {
+  font-family: 'OrkneyMedium', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.proyect_right_separation {
+  width: 20%;
+  height: 2px;
+  background-color: rgb(136, 204, 205);
+}
+
+.proyect_right-list {
+  font-family: 'Unna', serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.proyect_images {
+  overflow: auto;
+  padding: 5vh 5vw;
+}
+
+.proyect_images:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.proyect_img {
+  float: left;
+  width: 100%;
+  padding: 2px;
+}
+
+.proyect_nav {
+  position: relative;
+  height: 10vh;
+}
+
+.prev_proyect {
+  position: absolute;
+  left: 5vw;
+  top: 0;
+}
+
+.next_proyect {
+  position: absolute;
+  right: 5vw;
+  top: 0;
+  text-align: right;
+}
+
+.proyect_nav_arrow {
+  width: 30px;
+}
+
+.proyect_nav_text {
+  margin: 0;
+}
+
+/* QUE HACEMOS PAGE */
+
+.quehacemos_front {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  text-align: center;
+}
+
+#myVideo{
+  display: block;
+  margin: 0 auto;
+  min-height: 100%;
+  min-width: 100vw;
+  position: relative;
+  top: 0;
+  right: 0;
+	z-index: -5;
 }
