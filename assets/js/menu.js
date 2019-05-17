@@ -5,7 +5,7 @@
 	function desplazar (){
 		$('.menu__responsive--hidden').toggleClass('show');
 		$('#hamburger').toggleClass('hamburguer-slide');
-		$('.hamburger__section-icon').toggleClass('hamburger__section-icon-black');
+		// $('.hamburger__section-icon').toggleClass('hamburger__section-icon-black');
 	}
 
 	$('#hamburger').on('click', function(e){
