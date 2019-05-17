@@ -468,8 +468,7 @@ h1, h2, h3 {
 
 #myVideo{
   display: block;
-  margin: 0 auto;
-  max-height: 100%;
+  min-height: 100%;
   min-width: 100vw;
   position: absolute;
   top: 0;
@@ -483,4 +482,29 @@ h1, h2, h3 {
 
 .soluciones {
   text-align: center;
+  background-color: #fff;
+  padding: 5vh 5vw;
+}
+
+.soluciones_subtitle {
+  font-family: "OrkneyLight", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.soluciones_title {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.soluciones_categories {
+  display: flex;
+  flex-flow: column;
+  padding: 50px 0;
+}
+
+.soluciones_categories-item {
+  flex: 1;
 }
