@@ -17,7 +17,7 @@
 
 	window.addEventListener('click', function(e){
 		// var menuHide = $('.menu-hide');
-		if (menuShow === true && e.target.className != 'menu__responsive--hidden show') {
+		if (menuShow === true && e.target != '.menu__responsive--hidden show') {
 			desplazar();
 			// $('.menu__responsive--hidden').removeClass('show');
 			// $('#hamburger').removeClass('hamburguer-slide');

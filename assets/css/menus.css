@@ -87,21 +87,6 @@
 	margin: 0 auto;
 }
 
-.menures-tienda-link {
-	font-family: 'Lato', sans-serif;
-  	font-weight: 700;
-	background-color: #D31F26;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 0.7em;
-	padding: 10px;
-	position: absolute;
-	bottom: 110px;
-	width: 80%;
-	left: 10%;
-}
-
 .slogan-img {
 	position: absolute;
 	width: 45%;
@@ -126,7 +111,7 @@
   background-color: #fff;
   margin-bottom: 5px;
   transition: all .8s cubic-bezier(.19,1,.22,1);
-  border-radius: 20%;
+  border-radius: 15%;
   /*float: right;*/
 }
 
