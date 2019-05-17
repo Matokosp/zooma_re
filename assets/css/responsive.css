@@ -249,6 +249,12 @@
   margin: 0 auto;
 }
 
+/* QUE HACEMOS PAGE */
+
+.quehacemos_front {
+  padding-top: 35vh;
+}
+
 }
 
 @media (min-width: 1440px) {

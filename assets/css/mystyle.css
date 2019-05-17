@@ -386,7 +386,7 @@ h1, h2, h3 {
 }
 
 .proyect_right-item {
-  padding: 25px 0;
+  padding: 15px 0;
 }
 
 .proyect_right-title {
@@ -395,6 +395,10 @@ h1, h2, h3 {
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 1px;
+}
+
+.proyect_right-item h3 {
+  margin-bottom: 0;
 }
 
 .proyect_right_separation {
@@ -458,18 +462,25 @@ h1, h2, h3 {
 .quehacemos_front {
   height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   overflow: hidden;
-  text-align: center;
 }
 
 #myVideo{
   display: block;
   margin: 0 auto;
-  min-height: 100%;
+  max-height: 100%;
   min-width: 100vw;
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
 	z-index: -5;
+}
+
+.front_text_quehacemos {
+  padding: 35vh 10vw;
+}
+
+.soluciones {
+  text-align: center;
 }
