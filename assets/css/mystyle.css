@@ -434,7 +434,7 @@ h1, h2, h3 {
 
 .proyect_nav {
   position: relative;
-  height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 10);
 }
 
 .prev_proyect {
