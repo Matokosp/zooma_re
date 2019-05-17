@@ -67,14 +67,14 @@ h1, h2, h3 {
 }
 
 .fullpage {
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .front {
   background-color: rgb(29,29,27);
   padding-top: 8vh;
   position: relative;
-  height: 90vh;
+  height: calc(var(--vh, 1vh) * 90);
 }
 
 .front_logo {
@@ -314,20 +314,21 @@ h1, h2, h3 {
 /* PROYECTS PAGE */
 
 .proyect_hero {
-  /* The image used */
- background-image: url('../images/akbar-hero.jpg');
+    /* The image used */
+   background-image: url('../images/akbar-hero.jpg');
 
- /* Full height */
- height: 75vh;
+   /* Full height */
+   height: calc(var(--vh, 1vh) * 75);
 
- /* Create the parallax scrolling effect */
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 
- position: relative;
+   position: relative;
 }
+
 .proyect_container {
   max-width: 1200px;
   margin: 0 auto;
@@ -433,7 +434,7 @@ h1, h2, h3 {
 
 .proyect_nav {
   position: relative;
-  height: 10vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .prev_proyect {
@@ -460,7 +461,7 @@ h1, h2, h3 {
 /* QUE HACEMOS PAGE */
 
 .quehacemos_front {
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
   overflow: hidden;
