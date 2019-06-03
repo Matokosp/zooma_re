@@ -74,7 +74,7 @@ h1, h2, h3 {
   background-color: rgb(29,29,27);
   padding-top: 8vh;
   position: relative;
-  height: calc(var(--vh, 1vh) * 90);
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .front_logo {
