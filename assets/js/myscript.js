@@ -34,9 +34,9 @@ window.addEventListener('resize', () => {
     function showNextQuote() {
         ++quoteIndex;
         quoteOne.eq(quoteIndex % quoteOne.length)
-            .fadeIn(1500)
-            .delay(1500)
-            .fadeOut(1500, showNextQuote);
+            .fadeIn(600)
+            .delay(600)
+            .fadeOut(600, showNextQuote);
     }
 
     showNextQuote();
@@ -51,14 +51,32 @@ window.addEventListener('resize', () => {
     function showNextQuote() {
         ++quoteIndex;
         quoteTwo.eq(quoteIndex % quoteTwo.length)
-            .fadeIn(1500)
-            .delay(1500)
-            .fadeOut(1500, showNextQuote);
+            .fadeIn(600)
+            .delay(600)
+            .fadeOut(600, showNextQuote);
     }
 
     showNextQuote();
 
 })();
+
+(function() {
+
+    var quoteTwo = $(".quote_three");
+    var quoteIndex = -1;
+
+    function showNextQuote() {
+        ++quoteIndex;
+        quoteTwo.eq(quoteIndex % quoteTwo.length)
+            .fadeIn(600)
+            .delay(600)
+            .fadeOut(600, showNextQuote);
+    }
+
+    showNextQuote();
+
+})();
+
 
 // var messages = [
 //     "Hello!",

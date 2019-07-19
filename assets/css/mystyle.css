@@ -114,6 +114,18 @@ h1, h2, h3 {
   display: none;
 }
 
+.quote_three {
+  display: none;
+}
+
+.quote_four {
+  display: none;
+}
+
+.quote_five {
+  display: none;
+}
+
 .front_img {
   width: 70%;
   position: absolute;
@@ -496,7 +508,7 @@ h1, h2, h3 {
   font-size: 0.7rem;
 }
 
-.soluciones_title {
+.section_title {
   font-size: 1.6rem;
   margin: 0;
 }
@@ -509,4 +521,61 @@ h1, h2, h3 {
 
 .soluciones_categories-item {
   flex: 1;
+}
+
+.soluciones_categories-item-img {
+  width: 50%;
+}
+
+.soluciones_categories-item-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+/* SECTION EJEMPLOS */
+
+.ejemplos {
+  text-align: center;
+}
+
+.ejemplos_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.ejemplos_item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ejemplos_item-img {
+  width: 100%;
+}
+
+.ejemplos_overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ejemplos_overlay-text {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.ejemplos_overlay-img {
+  width: 20px;
+  position: absolute;
+  bottom: 40px;
+  margin-left: -10px;
 }

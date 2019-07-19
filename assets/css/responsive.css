@@ -265,6 +265,10 @@
   right: 10vw;
 }
 
+.front_text h2 {
+    font-size: 3rem;
+}
+
 .proyects_item {
   width: 25%;
   height: 24.9vw;
