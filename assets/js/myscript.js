@@ -78,40 +78,6 @@ window.addEventListener('resize', () => {
 })();
 
 
-// var messages = [
-//     "Hello!",
-//     "This is a website!",
-//     "You are now going to be redirected.",
-// ].reverse();
-
-// textSequence(0);
-// function textSequence(i) {
-//
-//   if (messages.length > i) {
-//     setTimeout(function() {
-//       document.getElementById("message").innerHTML = messages[i];
-//       textSequence(++i);
-//     }, 2000);
-//   } else if (messages.length == i) {
-//     textSequence(0);
-//   }
-//
-//   }
-
-// function nextMsg() {
-//     // if (messages.length != 0) {
-//       $('#message').html(messages.pop()).fadeIn(500).delay(1000).fadeOut(500, nextMsg);
-//     // } else {
-//     //
-//     // }
-// };
-//
-// $('#message').hide();
-// nextMsg();
-
-
-
-
   // PROYECTS HOVER
 
 var x = window.matchMedia("(max-width: 999px)");
@@ -147,3 +113,10 @@ var y = window.matchMedia("(min-width: 1000px)");
 	x.addListener(proyectInfoResponsive) // Attach listener function on state changes
   proyectInfo(y) // Call listener function at run time
   x.addListener(proyectInfo) // Attach listener function on state changes
+
+
+  // METODOLOGIA SHOW
+
+  $('.step-plus').on('click', function() {
+    $(this).siblings('.metodologia_step_info').toggleClass('metodologia_step_info-show');
+  })

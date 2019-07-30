@@ -53,6 +53,54 @@
   right: 10vw;
 }
 
+/* QUE HACEMOS */
+
+.soluciones_categories {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.soluciones_categories-item {
+  width: 50%;
+}
+
+/* EJEMPLOS */
+
+.ejemplos_flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ejemplos_item {
+  width: 33.3%;
+  height: 33.3%;
+}
+
+/* METODOLOGIA */
+
+.metodologia-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.metodologia_step {
+  width: 33.3%;
+  padding: 30px 10px;
+  margin: 0;
+}
+
+.step-plus {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.metodologia_step_info_item li {
+  font-size: 0.7rem;
+}
+
 }
 
 /* TABLETS HIGH RES PORTRAIT */
@@ -129,6 +177,17 @@
 
 .clients_flex_container {
   padding: 0 20vw;
+}
+
+/* QUE HACEMOS */
+
+.soluciones_categories {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.soluciones_categories-item {
+  width: 50%;
 }
 
 }
@@ -256,6 +315,92 @@
   padding-top: 35vh;
 }
 
+.soluciones_categories {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.soluciones_categories-item {
+  width: 25%;
+}
+
+/* EJEMPLOS */
+
+.ejemplos_flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.ejemplos_item {
+  width: 20%;
+  height: 20%;
+}
+
+.ejemplos_overlay {
+  padding: 0 20%;
+}
+
+.ejemplos_overlay-text {
+  font-size: 0.7rem;
+}
+
+/* METODOLOGIA */
+
+.metodologia-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 0 5vw;
+  max-width: 2000px;
+}
+
+.metodologia_step {
+  width: 33.3%;
+  padding: 30px 20px;
+  margin: 0;
+  border: 1px solid #f0f0f0;
+}
+
+.metodologia_step_img {
+  width: 70%;
+}
+
+.step-plus {
+  display: none;
+}
+
+.metodologia_step_info {
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.metodologia_step_info_item {
+  background-color: #F7F7F7;
+  padding: 40px 15px;
+  margin: 0;
+  flex: 1;
+}
+
+.metodologia_step_info_item_title {
+  background-color: rgb(136,204,205);
+  color: white;
+  padding: 3px 0;
+  border-radius: 20px;
+}
+
+.metodologia_step_info_item ul {
+  padding-left: 10px;
+}
+
+.metodologia_step_info_item li {
+  font-size: 0.7rem;
+}
+
 }
 
 @media (min-width: 1440px) {
@@ -293,6 +438,14 @@
 
 .footer_list_item span {
   font-size: 0.9rem;
+}
+
+/* QUE HACEMOS */
+
+/* METODOLOGIA */
+
+.metodologia_step_info_item {
+  padding: 40px 25px;
 }
 
 }

@@ -520,7 +520,7 @@ h1, h2, h3 {
 }
 
 .soluciones_categories-item {
-  flex: 1;
+  /* flex: 1; */
 }
 
 .soluciones_categories-item-img {
@@ -537,6 +537,10 @@ h1, h2, h3 {
 
 .ejemplos {
   text-align: center;
+}
+
+.ejemplos .section_title {
+  margin-bottom: 30px;
 }
 
 .ejemplos_flex {
@@ -566,6 +570,7 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 10%;
 }
 
 .ejemplos_overlay-text {
@@ -578,4 +583,97 @@ h1, h2, h3 {
   position: absolute;
   bottom: 40px;
   margin-left: -10px;
+}
+
+
+/* SECTION METODOLOGIA */
+
+.metodologia {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.metodologia_step {
+  padding: 30px 10vw;
+  background-color: #F7F7F7;
+  margin: 20px 0;
+}
+
+.metodologia_step_title {
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+.metodologia_step_img {
+  width: 100%;
+}
+
+.step-plus {
+  display: inline-block;
+  background-color: #88CCCD;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.step-plus img {
+  width: 100%;
+}
+
+.metodologia_step_info {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.metodologia_step_info-show {
+  max-height: 2000px;
+}
+
+.metodologia_step_info_item {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin: 15px 0;
+}
+
+.metodologia_step_info_item_title {
+  font-family: 'OrkneyLightItalic', sans-serif;
+  margin-top: 0;
+}
+
+.metodologia_step_info_item li {
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.metodologia_step_info_item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* NOSOTROS PAGE */
+
+.nosotros_front {
+  background-color: rgb(136,204,205);
+  position: relative;
+  background-image: url('../images/nosotros_front_hands.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quote_nosotros {
+  color: #000;
+}
+
+.nosotros_brief {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 100px 40px;
+}
+
+.nosotros_brief p {
+  display: inline-block;
+  max-width: 900px;
 }
