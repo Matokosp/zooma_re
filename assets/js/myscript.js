@@ -117,6 +117,7 @@ var y = window.matchMedia("(min-width: 1000px)");
 
   // METODOLOGIA SHOW
 
-  $('.step-plus').on('click', function() {
-    $(this).siblings('.metodologia_step_info').toggleClass('metodologia_step_info-show');
+  $('.pasos').on('hover', function() {
+    $(this).siblings('.arrow-down').toggleClass('info-show');
+    $(this).siblings('.metodologia_step_info_text').toggleClass('info-show');
   })

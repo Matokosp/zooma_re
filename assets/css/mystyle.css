@@ -126,6 +126,10 @@ h1, h2, h3 {
   display: none;
 }
 
+.black_quote {
+  color: #000;
+}
+
 .front_img {
   width: 70%;
   position: absolute;
@@ -491,7 +495,7 @@ h1, h2, h3 {
 }
 
 .front_text_quehacemos {
-  padding: 35vh 10vw;
+  padding: 40vh 10vw;
 }
 
 .soluciones {
@@ -602,13 +606,22 @@ h1, h2, h3 {
 .metodologia_step_title {
   font-size: 1.4rem;
   margin-top: 0;
+  color: #000;
 }
 
-.metodologia_step_img {
-  width: 100%;
+.metodologia_step_drawing {
+  width: 70%;
 }
 
-.step-plus {
+.metodologia_step_flujo {
+  width: 40%;
+}
+
+.metodologia_step_info {
+  display: none;
+}
+
+/* .step-plus {
   display: inline-block;
   background-color: #88CCCD;
   width: 50px;
@@ -619,9 +632,9 @@ h1, h2, h3 {
 
 .step-plus img {
   width: 100%;
-}
+} */
 
-.metodologia_step_info {
+/* .metodologia_step_info {
   max-height: 0px;
   overflow: hidden;
   transition: 1s;
@@ -629,15 +642,15 @@ h1, h2, h3 {
 
 .metodologia_step_info-show {
   max-height: 2000px;
-}
-
+} */
+/*
 .metodologia_step_info_item {
   background-color: #fff;
   padding: 40px 20px;
   margin: 15px 0;
-}
+} */
 
-.metodologia_step_info_item_title {
+/* .metodologia_step_info_item_title {
   font-family: 'OrkneyLightItalic', sans-serif;
   margin-top: 0;
 }
@@ -650,14 +663,14 @@ h1, h2, h3 {
 .metodologia_step_info_item ul {
   list-style-type: disc;
   padding-left: 20px;
-}
+} */
 
 /* NOSOTROS PAGE */
 
 .nosotros_front {
   background-color: rgb(136,204,205);
   position: relative;
-  background-image: url('../images/nosotros_front_hands.jpg');
+  background-image: url('../images/nosotros-front-hands.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -676,4 +689,132 @@ h1, h2, h3 {
 .nosotros_brief p {
   display: inline-block;
   max-width: 900px;
+}
+
+/* MIEMBROS PERFILES */
+
+.nosotros_pictures {
+  background-color: #000;
+  padding-bottom: 30px;
+}
+
+.staff_member {
+  margin-bottom: 50px;
+}
+
+.profile_picture {
+  width: 100%;
+}
+
+.staff_name {
+  color: #fff;
+  margin: 3px 0;
+  margin-left: 40px;
+}
+
+.staff_position {
+  color: #7b7b7b;
+  margin: 3px 0;
+  margin-left: 40px;
+}
+
+/* INVITACION */
+
+.invitation {
+  background-color: #eeeeed;
+  text-align: center;
+  padding: 100px 15%;
+}
+
+.invitation p {
+  margin: 0;
+  max-width: 500px;
+}
+
+/* GURUS */
+
+.gurus_section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.gurus_item {
+  padding: 0 40px;
+  margin: 30px 0;
+}
+
+.guru-cover {
+  width: 80%;
+}
+
+.gurus_item_author {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.gurus_item_title {
+  margin-top: 0.5rem;
+}
+
+/* PAGINA CONTACTO */
+
+.contact_front {
+  background-color: #232223;
+}
+
+.contact_info {
+  text-align: center;
+  padding: 100px 0 50px 0;
+}
+
+.contact_info_title {
+  color: #fff;
+}
+
+.contact_info_list {
+  list-style-type: none;
+  text-align: left;
+}
+
+.contact_info_icon {
+  width: 25px;
+}
+
+.contact_info_text {
+  color: #fff;
+  font-size: 0.7rem;
+  margin-left: 15px;
+}
+
+/* CONTACT FORM */
+
+.contact_form {
+  padding: 50px 10% 100px 10%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(121,205,203);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgb(94,188,184);
 }
