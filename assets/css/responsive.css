@@ -150,6 +150,20 @@
   width: 33.3%;
 }
 
+/* CONTACT PAGE */
+
+.contact_front {
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact_info {
+  padding: 100px 10% 50px 10%;
+}
+
 
 }
 
@@ -242,6 +256,8 @@
 }
 
 }
+
+/* DESKTOP SCREEN */
 
 @media (min-width: 900px) and (orientation: landscape) {
 
@@ -560,6 +576,34 @@
 
 .gurus_item {
   width: 25%;
+}
+
+/* CONTACT PAGE */
+
+.contact_front {
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_info {
+  padding: 0px;
+  width: 40%;
+}
+
+.contact_info_title {
+  font-size: 2.5rem;
+}
+
+.contact_info_text {
+  font-size: 0.8rem;
+}
+
+.contact_form {
+  padding: 0px 5%;
+  width: 50%;
 }
 
 }
