@@ -83,6 +83,7 @@ window.addEventListener('resize', () => {
 var x = window.matchMedia("(max-width: 999px)");
 var y = window.matchMedia("(min-width: 1000px)");
 
+
   function proyectInfoResponsive(x) {
     if (x.matches) { // If media query matches
 
@@ -113,6 +114,30 @@ var y = window.matchMedia("(min-width: 1000px)");
 	x.addListener(proyectInfoResponsive) // Attach listener function on state changes
   proyectInfo(y) // Call listener function at run time
   x.addListener(proyectInfo) // Attach listener function on state changes
+
+
+  // EJEMPLOS
+
+  var ejemploItem = $(".ejemplos_item");
+
+  if (x.matches) {
+    $(ejemploItem).on('click', function(e){
+      $(this).children(".ejemplos_overlay").toggleClass('ejemplos_overlay-hide');
+      e.stopPropagation();
+    })
+  }
+
+  if (y.matches) {
+    $(ejemploItem).on('mouseenter', function(e){
+      $(this).children(".ejemplos_overlay").addClass('ejemplos_overlay-hide');
+      e.stopPropagation();
+    })
+
+    $(ejemploItem).on('mouseleave', function(e){
+      $(this).children(".ejemplos_overlay").removeClass('ejemplos_overlay-hide');
+      e.stopPropagation();
+    })
+  }
 
 
   // METODOLOGIA SHOW

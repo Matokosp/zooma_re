@@ -198,6 +198,7 @@
 
 .main_menu-link-active {
   font-family: 'OrkneyBold', sans-serif;
+  text-decoration: line-through;
 }
 
 .main_menu ul li a:hover {

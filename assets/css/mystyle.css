@@ -71,10 +71,15 @@ h1, h2, h3 {
 }
 
 .front {
-  background-color: rgb(29,29,27);
+  background-color: rgba(0,0,0,0.9);
   padding-top: 8vh;
   position: relative;
   height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
+}
+
+.front_video {
+	display: none;
 }
 
 .front_logo {
@@ -443,7 +448,6 @@ h1, h2, h3 {
 }
 
 .proyect_img {
-  float: left;
   width: 100%;
   padding: 2px;
 }
@@ -564,7 +568,7 @@ h1, h2, h3 {
 
 .ejemplos_overlay {
   position: absolute;
-  background-color: rgba(0,0,0,0.8);
+  background-color: black;
   height: 100%;
   width: 100%;
   z-index: 5;
@@ -575,6 +579,12 @@ h1, h2, h3 {
   align-items: center;
   justify-content: center;
   padding: 0 10%;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.ejemplos_overlay-hide {
+  opacity: 0;
 }
 
 .ejemplos_overlay-text {

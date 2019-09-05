@@ -41,7 +41,29 @@
   padding: 0 10vw 5vh 10vw;
 }
 
+.proyect_img_dual {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .img-square {
+  width: 50%;
+}
+
+.project_img_triple {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_img_third-left {
+  width: 50%;
+}
+
+.project_img_third-right {
   width: 50%;
 }
 
@@ -266,6 +288,16 @@
   height: calc(var(--vh, 1vh) * 100);
 }
 
+.front_video {
+	display: block;
+    min-height: 100%;
+    min-width: 100vw;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -5;
+}
+
 .front_logo {
   display: none;
 }
@@ -367,7 +399,29 @@
   padding: 5px;
 }
 
+.proyect_img_dual {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .img-square {
+  width: 50%;
+}
+
+.project_img_triple {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_img_third-left {
+  width: 50%;
+}
+
+.project_img_third-right {
   width: 50%;
 }
 
